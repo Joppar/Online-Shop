@@ -1,12 +1,5 @@
 package sample;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.scene.control.Alert;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
 public class Customer extends Account {
 
     private static final String VALID_PASSWORD_REGEX = "(?=^.{8,}$)(?=(.*[^A-Za-z]){2,})^.*";

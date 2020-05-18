@@ -2,8 +2,6 @@ package sample;
 
 import javafx.beans.property.SimpleStringProperty;
 
-import java.sql.*;
-
 abstract public class Account {
 
     abstract public void setId(Integer id);

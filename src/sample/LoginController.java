@@ -7,14 +7,11 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import java.io.IOException;
 
 public class LoginController {
 
-    @FXML
-    private AnchorPane ap;
     @FXML
     private TextField userName;
     @FXML
@@ -41,11 +38,16 @@ public class LoginController {
         String userName = this.userName.getText();
         String pass = this.pass.getText();
         if(userName.equals("Admin") && pass.equals("Admin")) {
-            Parent dashboard = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+
+            /*Parent dashboard = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
             Scene dashboardScene = new Scene(dashboard);
             Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
             window.setScene(dashboardScene);
-            window.show();
+            window.show();*/
+            Alert alert = new Alert(Alert.AlertType.WARNING, "Soon");
+            alert.setHeaderText("Soon");
+            alert.showAndWait();
+
         } else
         {
             invalidLabel.setVisible(true);
