@@ -38,6 +38,7 @@ public class LoginController {
         String userName = this.userName.getText();
         String pass = this.pass.getText();
         if(userName.equals("Admin") && pass.equals("Admin")) {
+
             /*Parent dashboard = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
             Scene dashboardScene = new Scene(dashboard);
             Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -46,6 +47,7 @@ public class LoginController {
             Alert alert = new Alert(Alert.AlertType.WARNING, "Soon");
             alert.setHeaderText("Soon");
             alert.showAndWait();
+
         } else
         {
             invalidLabel.setVisible(true);
@@ -57,6 +59,25 @@ public class LoginController {
 
     }
 
+    public void handleRegisterButton()throws IOException {
+        Parent register = FXMLLoader.load(getClass().getResource("../fxml/Register.fxml"));
+        Scene registerScene = new Scene(register);
+        Stage window = new Stage();
+        window.setTitle("Registration");
+        window.setResizable(false);
+        window.setScene(registerScene);
+        window.show();
+    }
+
+    public void handleForgotPassword()throws IOException {
+        Parent forgotPassword = FXMLLoader.load(getClass().getResource("../fxml/ForgotPassword.fxml"));
+        Scene forgotPasswordScene = new Scene(forgotPassword);
+        Stage window = new Stage();
+        window.setTitle("ForgotPasssword");
+        window.setResizable(false);
+        window.setScene(forgotPasswordScene);
+        window.show();
+    }
 
 }
 

@@ -2,7 +2,6 @@ package sample;
 
 import javafx.beans.property.SimpleStringProperty;
 
-
 abstract public class Account {
 
     abstract public void setId(Integer id);

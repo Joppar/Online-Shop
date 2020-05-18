@@ -17,7 +17,8 @@
             <children>
                 <AnchorPane layoutX="226.0" layoutY="97.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="240.0" prefWidth="255.0" style="-fx-background-color: #202020;">
                     <children>
-                        <Hyperlink alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="200.0" prefHeight="26.0" prefWidth="176.0"  text="Forgot password ?" textAlignment="CENTER" textFill="#3f82ff" />
+                        <Hyperlink alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="200.0" prefHeight="26.0" prefWidth="176.0" onAction="#handleForgotPassword" text="Forgot password ?" textAlignment="CENTER" textFill="#3f82ff" />
+
 
                         <TextField fx:id="userName" layoutX="41.0" layoutY="32.0" prefHeight="25.0" prefWidth="176.0" promptText="Username">
                             <opaqueInsets>
@@ -29,7 +30,8 @@
                             <effect>
                                 <DropShadow />
                             </effect></Button>
-                        <Button fx:id="register" layoutX="146.0" layoutY="149.0" mnemonicParsing="false"  prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #090a0c,         linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),         linear-gradient(#20262b, #191d22),         radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));" text="Register Now" textFill="WHITE">
+                        <Button fx:id="register" layoutX="146.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleRegisterButton" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #090a0c,         linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),         linear-gradient(#20262b, #191d22),         radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));" text="Register Now" textFill="WHITE">
+
                             <effect>
                                 <DropShadow />
                             </effect>
